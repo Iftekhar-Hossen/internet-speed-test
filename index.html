@@ -14,19 +14,41 @@
         body{
             display: flex;
             height: 100vh;
-            align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
         h1{
             text-align: center;
             font-family: sans-serif;
         }
+        div{
+            text-align: center;
+        }
+        #reload{
+            padding: 20px 40px;
+            font-size: 15px;
+            border: none;
+            background: #000;
+            color: #fff;
+            text-transform: capitalize;
+            text-align: center;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+        #reload:hover{
+            background: #e74c3c;
+        }
     </style>
 </head>
 
-<body>
+<body id="body">
     <h1 id="progress">JavaScript is turned off, or your browser is realllllly slow</h1>
+    <div class="button">
+        <button id="reload">reload</button>
+    </div>
     <script src="js/script.js"></script>
+  
 </body>
 
 </html>

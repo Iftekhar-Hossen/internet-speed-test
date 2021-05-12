@@ -58,6 +58,11 @@ function MeasureConnectionSpeed() {
             speedKbps + " kbps",
             speedMbps + " Mbps"
         ]);
-        
+
     }
 }
+var reloader = document.getElementById("reload")
+reloader.addEventListener("click", function() {
+    location.reload();
+    document.getElementById("body").style.background = "#e74c3c"
+})
